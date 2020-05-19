@@ -1,0 +1,13 @@
+Evaluation Function
+-------------------
+
+Evaluation function for depth limited minimax is implemented to calculate the utility value.
+
+Calculation of Utility Value from the evaluation function : 
+
+The higher the utility value then better is the decision of the computer in selecting the respective column.
+
+First it checks for whether it can make a four, then it checks subsequently for threes and then twos. Similarly it checks for the highest possible four of the opponent and the formuala is given below :-
+
+utility_value = (my_fours * 10 + my_threes * 5 + my_twos * 2)- (opp_fours *10 + opp_threes * 5 + opp_twos * 2).
+After calculating all utility values, the highest value and the corresponding column mapped to it is selected and then the move is predicted.
